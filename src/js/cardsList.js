@@ -6,6 +6,7 @@ const divCar = document.querySelector(".Car");
 const h1totalCar = document.querySelector("#totalId");
 let totalCar = 0;
 
+//Funcion para crear cada carta del menu con base a la dataLocal
 export const infoMenu2 = ( {name, id, price, Description, num} ) =>{
     
     const crearCarta = `
@@ -26,10 +27,10 @@ export const infoMenu2 = ( {name, id, price, Description, num} ) =>{
 }
 
 
-
+//Funcion para crear cada carta del carrito de compras o de intereses
 const infoCart = ({id, name, price, num}) => {
     const carCarta = `
-        <div class="cardsCar">
+        <div class="card">
             <img src="assets/img/${id}.jpg" alt="${name}" />
             <div class="container">
                 <h4><b>${name}</b></h4>
@@ -44,7 +45,7 @@ const infoCart = ({id, name, price, num}) => {
     divCar.append(div.firstElementChild);
 }
 
-
+//Listener para agregar el producto al carro
 divPadre.addEventListener( "click", (event) => {
     const nombreElemento = event.target.localName;
     // const todoElemento = event.path[0];
@@ -54,6 +55,7 @@ divPadre.addEventListener( "click", (event) => {
     }
 });
 
+//Listener para borrar el div creado en js que contiene un elemento del carro de compras
 divCar.addEventListener("click", (event) => {
     const nombreElemento = event.target.localName;
     
