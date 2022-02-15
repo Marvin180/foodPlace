@@ -1,8 +1,10 @@
 html, body{
     background: rgb(252, 252, 252);
+    margin: 0 7%;
 }
 .divPadre img{
-    max-width: 200px;
+    width: 100%;
+    border-radius: 15px;
 }
 .divPadre{
     display: grid;
@@ -19,16 +21,19 @@ html, body{
 #banners{
   display:grid;
   background-color: #eee;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 70% 30%;
   border-radius: 15px;
+  margin-bottom: 10px;
 }
 #banners #imageService {
   width: 100%;
+  max-width: 600px;
+  max-height: 600px;
 }
 #banners #textService{
   padding: 10px 15px;
   font-family: sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   margin: auto 0;
 }
 
@@ -38,7 +43,7 @@ html, body{
 }
 .port img{
   width: 100%;
-  height: 100%;
+  
 }
 .port p {
   position: absolute;
@@ -50,6 +55,21 @@ html, body{
   text-shadow: 0 0 8px black;
   text-align: center;
 }
+
+
+
+.photosPlace {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.photosPlace img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+
+
 #menuWord{
   text-align: center;
   font-size:30px;
@@ -70,6 +90,8 @@ html, body{
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s; 
+    border-radius: 15px;
+    margin: 2px 2px 0 2px;
 }
 .card img{
   display: block;
@@ -90,24 +112,32 @@ html, body{
   grid-template-columns: 33% 33% 33%;
 }
 .Car img{
-  max-width: 300px;
+  width: 100%;
+  border-radius: 15px;
 }
 .btnRemove{
   background-color: red;
   color: white;
 }
 
-@media (max-width: 974px) {
+
+@media (max-width: 975px) {
   .divPadre{
     grid-template-columns: 50% 50%;
   }
-  
+  #banners #textService{
+    font-size: 20px;
+
+  }
   .port p{
     font-size: 2rem;
   }
   .Car{
     grid-template-columns: 50% 50%;
   }
+  html, body{
+    margin: 0;
+}
 }
 @media (max-width: 420px){
   .divPadre{
@@ -116,10 +146,22 @@ html, body{
   #banners #textService{
     font-size: 12px;
   }
+
+  .photosPlace {
+    grid-template-columns: 100%;
+  }
+  .photosPlace img {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+  }
+
+
   .port p{
     font-size: 1.2rem;
   }
   .Car{
     grid-template-columns: 100%;
   }
+
 }
