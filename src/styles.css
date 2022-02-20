@@ -1,7 +1,7 @@
-html, body{
-    background: rgb(252, 252, 252);
-    margin: 0 7%;
+*{
+  margin: 0;
 }
+
 .divPadre img{
     width: 100%;
     border-radius: 15px;
@@ -11,53 +11,49 @@ html, body{
     grid-template-columns: 33% 33% 33%;
 }
 
-.navBar{
-  background-color: black;
-  color: white;
+
+
+.navBar h1{
+  color: black;
   padding: 15px 10px 15px;
-}
-
-
-#banners{
-  display:grid;
-  background-color: #eee;
-  grid-template-columns: 70% 30%;
-  border-radius: 15px;
-  margin-bottom: 10px;
-}
-#banners #imageService {
-  width: 100%;
-  max-width: 600px;
-  max-height: 600px;
-}
-#banners #textService{
-  padding: 10px 15px;
-  font-family: sans-serif;
-  font-size: 22px;
-  margin: auto 0;
+  margin: 0;
 }
 
 
 .port{
   position: relative;
+  
 }
 .port img{
   width: 100%;
-  
+  height: 100%;
 }
-.port p {
+.port .txtsPortada {
   position: absolute;
-  font-size: 3rem;
-  bottom: 20%;
-  left: 10%;
+  font-size: 2.8em;
+  top: 40%;
+  left: 50%;
+  transform: translate(-100%, -50%);
   color: white;
   font-family: 'Times New Roman', Times, serif;
-  text-shadow: 0 0 8px black;
+  text-shadow: 1px 1px 8px black;
   text-align: center;
 }
 
-
-
+.textPortada {
+  display: block;
+  padding-top: 4rem;
+  text-decoration: none;
+  color: white;
+  text-shadow:5px 5px 9px black ;
+}
+.textPortada:hover{
+  text-decoration-line: underline overline;
+}
+#photosOfThePlace h1{
+  margin: 40px 0px 40px 0px;
+  text-align: center;
+}
 .photosPlace {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -69,21 +65,25 @@ html, body{
 }
 
 
+#sobreNosotros{
+  
+  font-family: sans-serif;
+  color:black;
+  text-align: center;
+  padding: 130px 15%;
+  font-size: 1.3rem;
+}
+
+#sobreNosotros h2 {
+  
+  margin-bottom: 1rem;
+}
 
 #menuWord{
   text-align: center;
-  font-size:30px;
+  font-size:2.5rem;
   font-family:'Courier New', Courier, monospace;
-}
-.buttonCar{
-  background-color: rgb(99, 99, 189);
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-.carTitle{
-  font-size: 30px;
-  margin: 20px 0 20px;
+  margin: 40px 0px 40px 0px;
 }
 
 .card {
@@ -106,20 +106,25 @@ html, body{
 .container {
   padding: 2px 16px;
 }
+.txtCards{
+  font-family:sans-serif;
+  text-align: justify;
 
-.Car{
+}
+#prices{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-}
-.Car img{
-  width: 100%;
-  border-radius: 15px;
-}
-.btnRemove{
-  background-color: red;
-  color: white;
+  grid-template-columns: 50% 50%;
+  text-align: center;
 }
 
+
+
+.footer {
+  margin-top: 30px;
+  padding: 40px;
+  background-color: rgb(83, 94, 105);
+}
 
 @media (max-width: 975px) {
   .divPadre{
@@ -129,11 +134,9 @@ html, body{
     font-size: 20px;
 
   }
-  .port p{
-    font-size: 2rem;
-  }
-  .Car{
-    grid-template-columns: 50% 50%;
+  .textPortada {
+    padding-top: 2rem;
+    font-size: 1.7rem;
   }
   html, body{
     margin: 0;
@@ -156,7 +159,10 @@ html, body{
     height: 100%;
   }
 
-
+  .port img{
+    height: 750px;
+    width: auto;
+  }
   .port p{
     font-size: 1.2rem;
   }

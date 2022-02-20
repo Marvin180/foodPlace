@@ -6,6 +6,7 @@ export const menu = [
         'category': 'food',
         'name':'Filete de pollo', 
         'price':5000, 
+        'priceDollar': 8,
         'Description':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo tincidunt justo. Phasellus pellentesque aliquam sapien, nec commodo erat elementum nec. Vivamus vehicula urna eu semper elementum.',
     },
     {
@@ -14,6 +15,7 @@ export const menu = [
         'category': 'food',
         'name':'Fajitas de cerdo', 
         'price':6000, 
+        'priceDollar': 10,
         'Description':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo tincidunt justo. Phasellus pellentesque aliquam sapien, nec commodo erat elementum nec. Vivamus vehicula urna eu semper elementum.',
     },
     {
@@ -22,6 +24,7 @@ export const menu = [
         'category': 'food',
         'name':'Filete termino medio', 
         'price':5000, 
+        'priceDollar': 8,
         'Description':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo tincidunt justo. Phasellus pellentesque aliquam sapien, nec commodo erat elementum nec. Vivamus vehicula urna eu semper elementum.',
     },
     {
@@ -30,6 +33,7 @@ export const menu = [
         'category': 'food',
         'name':'Tacos Mexicanos', 
         'price':3000, 
+        'priceDollar': 5,
         'Description':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo tincidunt justo. Phasellus pellentesque aliquam sapien, nec commodo erat elementum nec. Vivamus vehicula urna eu semper elementum.',
     },
     {
@@ -38,6 +42,7 @@ export const menu = [
         'category': 'food',
         'name':'Filete de cerdo 2', 
         'price':7000, 
+        'priceDollar': 12,
         'Description':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo tincidunt justo. Phasellus pellentesque aliquam sapien, nec commodo erat elementum nec. Vivamus vehicula urna eu semper elementum.',
     },
     {
@@ -46,6 +51,7 @@ export const menu = [
         'category': 'food',
         'name':'Filete de pollo 2', 
         'price':4500, 
+        'priceDollar': 7,
         'Description':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo tincidunt justo. Phasellus pellentesque aliquam sapien, nec commodo erat elementum nec. Vivamus vehicula urna eu semper elementum.',
     },
     {
@@ -54,6 +60,7 @@ export const menu = [
         'category': 'food',
         'name':'Hamburguesa', 
         'price':3000, 
+        'priceDollar': 5,
         'Description':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo tincidunt justo. Phasellus pellentesque aliquam sapien, nec commodo erat elementum nec. Vivamus vehicula urna eu semper elementum.',
     },
     {
@@ -62,6 +69,7 @@ export const menu = [
         'category': 'food',
         'name':'Sopa de pollo', 
         'price':6000, 
+        'priceDollar': 10,
         'Description':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo tincidunt justo. Phasellus pellentesque aliquam sapien, nec commodo erat elementum nec. Vivamus vehicula urna eu semper elementum.',
     },
     {
@@ -69,7 +77,8 @@ export const menu = [
         'id': 'food9',
         'category': 'food',
         'name':'Pescado con Vegetales', 
-        'price':7000, 
+        'price':7000,
+        'priceDollar': 12, 
         'Description':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo tincidunt justo. Phasellus pellentesque aliquam sapien, nec commodo erat elementum nec. Vivamus vehicula urna eu semper elementum.',
     },
     {
@@ -78,6 +87,7 @@ export const menu = [
         'category': 'food',
         'name':'Filete de pollo con vegetales', 
         'price':4500, 
+        'priceDollar': 7,
         'Description':'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo tincidunt justo. Phasellus pellentesque aliquam sapien, nec commodo erat elementum nec. Vivamus vehicula urna eu semper elementum.',
     },
 ]
