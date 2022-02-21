@@ -16,6 +16,7 @@
 .navBar h1{
   color: black;
   padding: 15px 10px 15px;
+  font-size: 40px;
   margin: 0;
 }
 
@@ -104,9 +105,10 @@
 
 /* Add some padding inside the card container */
 .container {
-  padding: 2px 16px;
+  padding: 10px 20px;
 }
 .txtCards{
+  font-size: 1.1rem;
   font-family:sans-serif;
   text-align: justify;
 
@@ -121,15 +123,31 @@
 
 
 .footer {
+  display: grid;
+  grid-template-columns: 70% 15% 15%;
   margin-top: 30px;
   padding: 40px;
   background-color: rgb(83, 94, 105);
+  font-size: 1.2rem;
 }
-
+.footer .infoFooter .info{
+  margin: 10px 0px 10px 0px;
+}
+@media (min-width: 1200px){
+  .divPadre{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+}
 @media (max-width: 975px) {
   .divPadre{
     grid-template-columns: 50% 50%;
   }
+
+  .navBar h1{
+    font-size: 30px;
+  }
+
   #banners #textService{
     font-size: 20px;
 
@@ -138,9 +156,10 @@
     padding-top: 2rem;
     font-size: 1.7rem;
   }
-  html, body{
-    margin: 0;
-}
+  .footer {
+    grid-template-columns: 60% 20% 20%;
+    font-size: 0.9rem;
+  }
 }
 @media (max-width: 420px){
   .divPadre{
@@ -169,5 +188,8 @@
   .Car{
     grid-template-columns: 100%;
   }
-
+  .footer {
+    display: block;
+    font-size: 0.9rem;
+  }
 }
